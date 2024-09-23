@@ -1,0 +1,12 @@
+func printerError(_ s: String) -> String {
+    let ColoursNum = s.count
+    var ErrorsNum = 0
+
+    for letter in s {
+        if letter >= "n" && letter <= "z" {
+            ErrorsNum += 1
+        }
+    }
+
+    return "\(ErrorsNum)/\(ColoursNum)"
+}
