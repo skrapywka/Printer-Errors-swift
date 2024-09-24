@@ -1,0 +1,3 @@
+func printerError(_ s: String) -> String {
+    return "\(s.filter { $0 > "m" }.count)/\(s.count)"
+} 
